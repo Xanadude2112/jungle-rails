@@ -9,4 +9,12 @@
     background: rgba(0, 130, 29, 0.7);
     color: white;
   }
+
+  button.solid-button-el span {
+    border-radius: 0.25em;
+    border: 0.1em solid rgba(0, 0, 0, 0.8);
+    background: rgb(102, 102, 102);
+    color: rgb(0, 0, 0);
+    pointer-events: none;
+  }
 }
