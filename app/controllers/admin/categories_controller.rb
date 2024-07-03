@@ -1,4 +1,5 @@
-# A nested module to organize all admin-related controllers
+module Admin
+  # A nested module to organize all admin-related controllers
   class CategoriesController < ApplicationController
     
     # Lists all categories
@@ -38,3 +39,4 @@
       # Ensure that `params` contains a `:category` key, and permit only the `:name` attribute
     end
   end
+end
