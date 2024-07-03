@@ -1,18 +1,10 @@
-<h1>Categories</h1>
+<h1 class="text-success my-3">Categories</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @categories.each do |category| %>
-      <tr>
-        <td><%= category.name %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<h3 class="mt-5">Name Classification</h2>
+<ul>
+  <% @categories.each do |category| %>
+    <li><%= category.name %></li>
+  <% end %>
+</ul>
 
-<%= link_to 'New Category', new_admin_category_path %>
+<%= link_to 'New Category', new_admin_category_path, class: 'text-success my-4' %>
