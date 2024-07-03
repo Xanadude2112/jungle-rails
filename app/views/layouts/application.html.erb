@@ -14,7 +14,7 @@
   <%= render 'layouts/top_nav' %>
 
   <% if session[:user_id] %>
-    <p>Welcome, <%= User.find(session[:user_id]).first_name %>! | <%= link_to 'Logout', logout_path, method: :delete %></p>
+    <p>Welcome, <%= User.find(session[:user_id]).first_name, class: 'my-4 mx-2' %>! | <%= link_to 'Logout', logout_path, method: :delete, class: 'text-danger my-4  mx-2' %></p>
   <% else %>
     <%= link_to 'Sign Up', signup_path, class: 'my-4 mx-2' %> | <%= link_to 'Login', login_path, class: 'text-success my-4  mx-2' %>
   <% end %>
